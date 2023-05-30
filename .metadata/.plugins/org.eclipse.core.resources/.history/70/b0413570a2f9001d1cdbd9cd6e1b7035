@@ -1,0 +1,19 @@
+package input_data;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String x;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite um texto");
+		x = sc.next();
+		
+		System.out.printf("O texto digitado foi: '%s'", x);
+		sc.close();
+	}
+
+}

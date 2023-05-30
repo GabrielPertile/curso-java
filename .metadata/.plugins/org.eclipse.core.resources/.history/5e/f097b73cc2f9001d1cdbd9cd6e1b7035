@@ -1,0 +1,27 @@
+package entities;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite as medidas do Triangulo X: ");
+
+		Triangle X = new Triangle();
+		X.a = sc.nextDouble();
+		X.b = sc.nextDouble();
+		X.c = sc.nextDouble();
+		
+		System.out.println("Digite as medidas do Triangulo Y: ");
+		Triangle Y = new Triangle();
+		Y.a = sc.nextDouble();
+		Y.b = sc.nextDouble();
+		Y.c = sc.nextDouble();
+	}
+
+}

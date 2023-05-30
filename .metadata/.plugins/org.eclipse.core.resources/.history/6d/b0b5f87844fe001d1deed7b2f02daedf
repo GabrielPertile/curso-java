@@ -1,0 +1,22 @@
+package entities;
+
+import entities.enums.WorkerLevel;
+
+public class Worker {
+	private String name;
+	private WorkerLevel level;
+	private Department department;
+	private Double baseSalary;
+
+	public Worker() {
+		
+	}
+	public Worker(String name, WorkerLevel level, Department department, Double baseSalary) {
+		super();
+		this.name = name;
+		this.level = level;
+		this.department = department;
+		this.baseSalary = baseSalary;
+	}
+	
+}

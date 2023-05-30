@@ -1,0 +1,48 @@
+
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Triangle;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite as medidas do Triangulo X: ");
+
+		Triangle X = new Triangle();
+		X.a = sc.nextDouble();
+		X.b = sc.nextDouble();
+		X.c = sc.nextDouble();
+		
+		System.out.println("Digite as medidas do Triangulo Y: ");
+		Triangle Y = new Triangle();
+		Y.a = sc.nextDouble();
+		Y.b = sc.nextDouble();
+		Y.c = sc.nextDouble();
+		
+		if (X.area() > Y.area()) {
+			System.out.println("O triangulo X é maior");
+		} else {
+			System.out.println("O triangulo Y é maior");			
+		}
+		
+		sc.close();
+	}
+	
+//	public static double calcP(double a, double b, double c) {
+//		double p = (a + b + c) / 2;
+//		
+//		return p;
+//	}
+//	
+//	public static double calcArea(double a, double b, double c, double p) {
+//		double area = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+//		
+//		return area;
+//	}
+}

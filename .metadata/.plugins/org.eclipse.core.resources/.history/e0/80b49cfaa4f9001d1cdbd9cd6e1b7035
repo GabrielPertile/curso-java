@@ -1,0 +1,31 @@
+package input_data;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//String x;
+		//int y;
+		Locale.setDefault(Locale.US);
+		double x;
+		
+		Scanner sc = new Scanner(System.in);
+		
+//		System.out.println("Digite um texto");
+//		x = sc.next();
+		
+		System.out.println("Digite um numero:");
+		
+//		y = sc.nextInt();
+		x = sc.nextDouble();
+		
+		System.out.printf("O double digitado foi: '%.2f'%n", x);
+//		System.out.printf("O número digitado foi: '%d'%n", y);
+		
+		
+		sc.close();
+	}
+
+}

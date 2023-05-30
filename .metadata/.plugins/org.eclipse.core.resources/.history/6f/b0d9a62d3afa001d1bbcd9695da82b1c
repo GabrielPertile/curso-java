@@ -1,0 +1,29 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Product;
+
+public class Products {
+
+	public static void main(String[] args) {
+		Product product = new Product();
+		
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Entre com os dados do seu produto:");
+		
+		System.out.print("Name: ");
+		product.name = sc.nextLine();
+		
+		System.out.print("Price: ");
+		product.price = sc.nextDouble();
+		
+		System.out.print("Quantity: ");
+		product.quantity = sc.nextInt();
+		
+		sc.close();
+	}
+
+}

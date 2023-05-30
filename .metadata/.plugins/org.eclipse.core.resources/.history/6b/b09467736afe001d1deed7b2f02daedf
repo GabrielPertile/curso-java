@@ -1,0 +1,49 @@
+package application;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Department;
+import entities.Worker;
+import entities.enums.WorkerLevel;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o departamento:");
+		String department = sc.nextLine();
+		
+		System.out.println("Dados trabalhador:");
+		
+		System.out.println("Nome:");
+		String name = sc.nextLine();
+		
+		System.out.println("Level:");
+		WorkerLevel level = WorkerLevel.valueOf(sc.next().toUpperCase());
+		
+		System.out.println("Salário base:");
+		Double baseSalary = sc.nextDouble();
+		
+		sc.nextLine();
+		System.out.println("Qtd. de contratos:");
+		int n = sc.nextInt();
+		sc.nextLine();
+		
+		Worker worker = new Worker(name, level, new Department(department), baseSalary);
+		
+		for (int i=0; i < n; i++) {
+			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy")
+			System.out.println("Data: ");
+			Date date = sdf.parse(sc.next());
+		}
+		
+		
+		sc.close();
+	}
+
+}
